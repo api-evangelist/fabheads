@@ -1,7 +1,24 @@
 aid: fabheads
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/fabheads.png
 name: Fabheads
-description: 'Fabheads is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: hardware. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Fabheads is a carbon fiber and composite manufacturing company (Fabheads Automation)
+  that delivers end-to-end composite product development — design, analysis, tooling, prototyping,
+  and production — using its own fiber-printing and automated-layup technology alongside traditional
+  craftsmanship. It serves aerospace, mobility, marine, robotics, medical, and sports customers from
+  aerospace-grade facilities, and publishes the C6 Slicer tool for composite fiber printing. Backed by
+  Accel. As a hardware manufacturer it exposes no public developer API; this profile captures identity
+  and domain-security posture rather than API artifacts.'
 url: https://raw.githubusercontent.com/api-evangelist/fabheads/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Hardware
+- Manufacturing
+- Carbon Fiber
+- Composites
+- Additive Manufacturing
+- Aerospace
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +44,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/fabheads-domain-security.yml
 - type: Website
   url: https://fabheads.com/
+- type: Blog
+  url: https://fabheads.com/blogs
+- type: Support
+  url: https://fabheads.com/contact
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
